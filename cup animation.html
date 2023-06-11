@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:skyblue;
+        }
+        .contaner{width: 300px;
+            height: 300px;
+             justify-content: center;
+           align-items: center; 
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 200px;
+           background-color: skyblue;
+           
+        }
+        .upper{position: relative;
+            width: 200px;
+            height: 150px;
+            background-color: aliceblue;
+            border-bottom-right-radius: 100px;
+           border-bottom-left-radius: 100px;
+           
+           margin-left: 50px;
+           
+
+        }
+        .lower{position: absolute;
+
+            width: 200px;
+            height: 20px;
+            background-color:rgb(235, 238, 241);
+            border-bottom-right-radius: 30px;
+            border-bottom-left-radius: 30px;
+            margin-top: 50px;
+            margin-right: 80px;
+            
+        
+
+        }
+        .lower1{position: absolute;
+            width: 5px;
+             height: 5px;
+              border-radius: 100%;
+             background-color:rgb(174, 170, 170);
+             padding: 0 100px;
+             margin-top: 20px;
+
+
+        }
+        .first{position: relative;
+            width: 108px;
+            height: 80px;
+            margin-left: 130px;
+            background-color:aliceblue;
+            border-radius:50px ;
+            
+
+        }
+        .secound{position: absolute;
+            width: 30px;
+            height: 60px;
+            background-color:skyblue;
+            margin-left: 85px;
+            bottom: 80px;
+            left: 115px;
+            border-top-right-radius:  50px;
+            border-bottom-right-radius: 50px ;
+             transform:rotate(4deg)
+
+        }
+        .bubble{
+            width: 50px;
+            height: 40px;
+            margin-left: 60px;
+            border-radius: 100%;
+            animation-name: bubble;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            position: relative;
+           bottom: 100px;
+            
+            
+            
+        }
+        .bubble1{width: 50px;
+            height: 40px;
+            margin-left: 60px;
+            border-radius: 100%;
+            animation-name: bubble;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            position: absolute;
+           bottom: 100px;
+            
+            
+        }
+        .bubble2{width: 50px;
+            height: 40px;
+            margin-left: 60px;
+            border-radius: 100%;
+            animation-name: bubble;
+            animation-duration:5s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            position: relative;
+           bottom: 100px;
+            }
+    .bubble3{
+        width: 50px;
+            height: 40px;
+            margin-left: 60px;
+            border-radius: 100%;
+            animation-name: bubble;
+            animation-duration:5.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function:ease-in;
+            position: absolute;
+            background-color: aquamarine;
+          bottom: 100px;
+    }
+        @keyframes bubble {
+            from{
+                background-color:rgba(255, 255, 255, 0.171) ;
+                width: 50px;
+                height: 40px;
+                bottom: 100px;
+            }
+            to{
+                background-color: transparent;
+                width: 100px;
+                height: 70px;
+                bottom: 350px;
+            } 
+         }
+    </style>
+</head>
+<body>
+    
+  <div class="contaner">
+        <div class="upper">
+        <div class="first"></div>
+        <div class="secound"></div>
+        <div class="third"></div>
+        <div class="lower">
+            <div class="lower1"></div>
+        </div>
+        <div class="bubble"></div>
+        <div class="bubble1"></div>
+        <div class="bubble2"></div>
+        <div class="bubble3"></div>
+       
+        </div>
+        
+    </div>
+    
+</body>
+</html>
